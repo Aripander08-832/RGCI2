@@ -2,7 +2,7 @@ const CHALS = [
     {
         unl: ()=>true,
 
-        max: 20,
+        max: 50,
         id: 'pp',
 
         title: `Less Level`,
@@ -20,7 +20,7 @@ const CHALS = [
     },{
         unl: ()=>true,
 
-        max: 20,
+        max: 50,
         id: 'pp',
 
         title: `Grassless`,
@@ -38,7 +38,7 @@ const CHALS = [
     },{
         unl: ()=>true,
 
-        max: 20,
+        max: 50,
         id: 'crystal',
 
         title: `No Tiers`,
@@ -56,7 +56,7 @@ const CHALS = [
     },{
         unl: ()=>true,
 
-        max: 10,
+        max: 30,
         id: 'crystal',
 
         title: `Reduced Resources`,
@@ -74,7 +74,7 @@ const CHALS = [
     },{
         unl: ()=>true,
 
-        max: 10,
+        max: 30,
         id: 'crystal',
 
         title: `Prestigeless`,
@@ -92,7 +92,7 @@ const CHALS = [
     },{
         unl: ()=>player.sTimes > 0,
 
-        max: 10,
+        max: 30,
         id: 'steel',
 
         title: `Reduced Resources II`,
@@ -110,7 +110,7 @@ const CHALS = [
     },{
         unl: ()=>player.sTimes > 0,
 
-        max: 10,
+        max: 30,
         id: 'steel',
 
         title: `Crystalless`,
@@ -128,7 +128,7 @@ const CHALS = [
     },{
         unl: ()=>hasUpgrade('factory',2),
 
-        max: 10,
+        max: 30,
         id: 'steel',
 
         title: `Challengerism`,
@@ -141,7 +141,7 @@ const CHALS = [
         goalDesc: x=>"Level "+format(x,0),
         goalAmt: ()=>player.level.toNumber(),
 
-        eff: i=>Decimal.pow(10,i),
+        eff: i=>Decimal.pow(15,i),
         effDesc: x=>format(x)+"x",
     },
 ]
