@@ -56,7 +56,7 @@ const UPGS = {
                 icon: ['Curr/Grass'],
                 
                 cost: i => Decimal.pow(1.05,scale(E(i),1e6,2,0)).mul(10).ceil(),
-                bulk: i => i.div(10).max(1).log(1.2).scale(1e6,2,0,true).floor().add(1),
+                bulk: i => i.div(10).max(1).log(1.05).scale(1e6,2,0,true).floor().add(1),
 
                 effect(i) {
                     let x = Decimal.pow(2,i.div(25).floor()).mul(i.add(1))
@@ -92,7 +92,7 @@ const UPGS = {
                 icon: ['Icons/Speed'],
                 
                 cost: i => Decimal.pow(1.15,i).mul(100).ceil(),
-                bulk: i => i.div(100).max(1).log(1.75).floor().add(1),
+                bulk: i => i.div(100).max(1).log(1.15).floor().add(1),
 
                 effect(i) {
                     let x = i/10+1
@@ -110,7 +110,7 @@ const UPGS = {
                 icon: ['Icons/XP'],
                 
                 cost: i => Decimal.pow(1.08,scale(E(i),1e6,2,0)).mul(1e3).ceil(),
-                bulk: i => i.div(1e3).max(1).log(1.3).scale(1e6,2,0,true).floor().add(1),
+                bulk: i => i.div(1e3).max(1).log(1.08).scale(1e6,2,0,true).floor().add(1),
 
                 effect(i) {
                     let x = Decimal.pow(2,i.div(25).floor()).mul(i.add(1))
@@ -128,7 +128,7 @@ const UPGS = {
                 icon: ['Icons/Range'],
                 
                 cost: i => Decimal.pow(1.5,i).mul(1e4).ceil(),
-                bulk: i => i.div(1e4).max(1).log(2).floor().add(1),
+                bulk: i => i.div(1e4).max(1).log(1.5).floor().add(1),
 
                 effect(i) {
                     let x = i*10
