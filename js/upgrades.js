@@ -55,7 +55,7 @@ const UPGS = {
                 res: "grass",
                 icon: ['Curr/Grass'],
                 
-                cost: i => Decimal.pow(1.2,scale(E(i),1e6,2,0)).mul(10).ceil(),
+                cost: i => Decimal.pow(1.05,scale(E(i),1e6,2,0)).mul(10).ceil(),
                 bulk: i => i.div(10).max(1).log(1.2).scale(1e6,2,0,true).floor().add(1),
 
                 effect(i) {
@@ -91,7 +91,7 @@ const UPGS = {
                 res: "grass",
                 icon: ['Icons/Speed'],
                 
-                cost: i => Decimal.pow(1.75,i).mul(100).ceil(),
+                cost: i => Decimal.pow(1.15,i).mul(100).ceil(),
                 bulk: i => i.div(100).max(1).log(1.75).floor().add(1),
 
                 effect(i) {
@@ -109,7 +109,7 @@ const UPGS = {
                 res: "grass",
                 icon: ['Icons/XP'],
                 
-                cost: i => Decimal.pow(1.3,scale(E(i),1e6,2,0)).mul(1e3).ceil(),
+                cost: i => Decimal.pow(1.08,scale(E(i),1e6,2,0)).mul(1e3).ceil(),
                 bulk: i => i.div(1e3).max(1).log(1.3).scale(1e6,2,0,true).floor().add(1),
 
                 effect(i) {
@@ -119,7 +119,7 @@ const UPGS = {
                 },
                 effDesc: x => x.format()+"x",
             },{
-                max: 5,
+                max: 10,
 
                 title: "Range",
                 desc: `Increase grass cut range by <b class="green">10</b> per level. Base is 50.`,
@@ -127,7 +127,7 @@ const UPGS = {
                 res: "grass",
                 icon: ['Icons/Range'],
                 
-                cost: i => Decimal.pow(2,i).mul(1e4).ceil(),
+                cost: i => Decimal.pow(1.5,i).mul(1e4).ceil(),
                 bulk: i => i.div(1e4).max(1).log(2).floor().add(1),
 
                 effect(i) {
@@ -193,7 +193,7 @@ const UPGS = {
                 },
                 effDesc: x => "+"+format(x,0),
             },{
-                max: 10,
+                max: 100,
 
                 costOnce: true,
 
@@ -203,11 +203,11 @@ const UPGS = {
                 res: "perk",
                 icon: ['Icons/Speed'],
                 
-                cost: i => 1,
-                bulk: i => i,
+                cost: i => 0.2,
+                bulk: i => i/5,
 
                 effect(i) {
-                    let x = 1+i*0.25
+                    let x = 1+i*0.45
 
                     return x
                 },
@@ -255,7 +255,7 @@ const UPGS = {
                 },
                 effDesc: x => "+"+format(x,0),
             },{
-                max: 1,
+                max: 3,
 
                 costOnce: true,
 
@@ -265,7 +265,7 @@ const UPGS = {
                 res: "perk",
                 icon: ['Icons/MoreGrass'],
                 
-                cost: i => 10,
+                cost: i => 1,
                 bulk: i => i.div(10).floor(),
 
                 effect(i) {
