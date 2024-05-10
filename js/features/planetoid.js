@@ -290,9 +290,9 @@ const PLANETOID = {
                 effect: ()=>Math.floor(Math.max(player.planetoid.planetTier-5,0)/5),
                 effDesc: x=>"+"+format(x,0),
             },{
-                r: 40,
+                r: 20,
                 desc: `Gain more Stardusts based on planetary tier, starting at 40.`,
-                effect: ()=>Decimal.pow(1.2,player.planetoid.planetTier-39).max(1),
+                effect: ()=>Decimal.pow(1.2,player.planetoid.planetTier-19).max(1),
                 effDesc: x=>formatMult(x),
             },
         ],
