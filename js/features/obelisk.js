@@ -45,10 +45,10 @@ const LUNAR_OB = [
     ['Grass Value','Curr/Grass',1,1.1,0.01,1],
     ['XP','Icons/XP',1,1.1,0.01,1],
     [`TP`,'Icons/TP',1,1.1,0.01,1],
-    [`Cosmic`,'Icons/XP2',2,5,2,0],
+    [`Cosmic`,'Icons/XP2',2,0.1,2,0],
     [`Charge`,'Curr/Charge',1,1.1,0.001,1],
     [`Rocket Fuel`,'Curr/RocketFuel',10,100,0.01,0],
-    [`Planetarium`,'Curr/Planetoid',2,5,2,0],
+    [`Planetarium`,'Curr/Planetoid',2,0.1,2,0],
 ]
 const LUNAR_OB_MODE = ['x','^']
 
