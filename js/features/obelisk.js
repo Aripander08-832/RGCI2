@@ -75,7 +75,7 @@ tmp_update.push(()=>{
         let lvl = E(player.lunar.level[i])
 
         tmp.lunar_next[i] = l[5]==0?Decimal.mul(l[3],lvl).add(l[2]):Decimal.pow(l[3],lvl).mul(l[2])
-        tmp.lunar_eff[i] = (!su && l[5]==1 ? lvl.softcap(200,0.5,0) : lvl).mul(l[4]).add(1)
+        tmp.lunar_eff[i] = (!su && l[5]==1 ? lvl.softcap(1000,0.8,0) : lvl).mul(l[4]).add(1)
     }
 })
 
