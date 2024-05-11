@@ -13,7 +13,7 @@ UPGS.stardust = {
 
     ctn: [
         {
-            max: 10000,
+            max: 100000,
 
             title: "Star Growth",
             desc: `Increase star grow speed by <b class="green">+5%</b> compounding per level.`,
@@ -25,7 +25,7 @@ UPGS.stardust = {
             bulk: i => i.scale(1e33,1,1,true).div(10).max(1).log(1.05).floor().add(1),
         
             effect(i) {
-                let x = Decimal.pow(1.05,i)
+                let x = Decimal.pow(1.15,i)
         
                 return x
             },
@@ -49,7 +49,7 @@ UPGS.stardust = {
             },
             effDesc: x => formatMult(x),
         },{
-            max: 1000,
+            max: 10000,
 
             title: "Stardust XP",
             desc: `Increase the exponent of XP by <b class="green">+1%</b> per level.`,
@@ -61,13 +61,13 @@ UPGS.stardust = {
             bulk: i => i.div(100).max(1).log(2).floor().add(1),
         
             effect(i) {
-                let x = i/100+1
+                let x = i/10+1
         
                 return x
             },
             effDesc: x => formatPow(x),
         },{
-            max: 1000,
+            max: 10000,
 
             title: "Stardust Cosmic",
             desc: `Increase the exponent of Cosmic by <b class="green">+1%</b> per level.`,
