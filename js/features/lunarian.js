@@ -62,7 +62,7 @@ const LUNAR_MAP = [
         req: () => player.hsj >= 5,
         reqDesc: "HSJ5",
 
-        levels: [1,6,11,16,21],
+        levels: [1,15,31,46,61.91,121,151],
 
         res: "l_curr3",
         discover_items: ["l_curr3"],//
