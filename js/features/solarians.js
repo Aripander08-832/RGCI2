@@ -666,7 +666,7 @@ const FORMING = {
                     ['l_curr1',1,2],
                 ],
                 rankMult: 3,
-                bonus: b => b.div(100).add(1),
+                bonus: b => b.div(100).add(25),
                 bonusDesc: x => "+"+formatPercent(x.sub(1),0),
             },{
                 max: 30,
