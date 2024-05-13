@@ -74,7 +74,7 @@ const LUNAR_MAP = [
         req: () => player.sol.bestStage.gte(8500),
         reqDesc: "Stage 8,500",
 
-        levels: [1,11,21,31,41],
+        levels: [1,11,21,31,41,51.61,81,101,126],
 
         res: "l_curr4",
         discover_items: ["l_curr4"],//
