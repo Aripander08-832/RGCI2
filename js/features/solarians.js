@@ -408,7 +408,7 @@ const FORMING = {
                 title: "Grass Exponent",
                 icon: "Curr/Grass",
 
-                max: 50,
+                max: 90,
                 req: [1e5,100,1.25],
                 rankReq: [100],
                 materials: [
@@ -633,7 +633,7 @@ const FORMING = {
             },{
                 unl: ()=>hasSolarUpgrade(7,16),
 
-                max: 25,
+                max: 55,
 
                 title: "Lunar Eclipse (Lunar Power)",
                 icon: "Curr/Lunar",
@@ -721,7 +721,7 @@ const FORMING = {
                 req: [1e17,10],
                 rankReq: [100],
                 materials: [
-                    ['l_curr3',1,2],
+                    ['l_curr3',1,1.2],
                 ],
                 rankMult: 2,
                 bonus: b => b.add(1),
@@ -735,7 +735,7 @@ const FORMING = {
                 req: [1e75,10],
                 rankReq: [10],
                 materials: [
-                    ['l_curr4',1,2],
+                    ['l_curr4',1,1.2],
                 ],
                 rankMult: 2,
                 bonus: b => b.add(1),
@@ -749,7 +749,7 @@ const FORMING = {
                 req: [1e75,10],
                 rankReq: [10],
                 materials: [
-                    ['l_curr4',1,2],
+                    ['l_curr4',1,1.2],
                 ],
                 rankMult: 2,
                 bonus: b => b.add(1),
@@ -763,7 +763,7 @@ const FORMING = {
                 req: ['1e615',10],
                 rankReq: [10],
                 materials: [
-                    ['l_curr5',1,2],
+                    ['l_curr5',1,1.2],
                 ],
                 rankMult: 5,
                 bonus: (b,l,r) => Decimal.pow(1.2,l).mul(Decimal.pow(10,r)),
