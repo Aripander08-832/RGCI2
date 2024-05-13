@@ -2147,7 +2147,7 @@ const SOLAR_UPGS = [
                 },
                 effDesc: x => formatMult(x),
             },{
-                max: 100,
+                max: 10000,
                 title: "Unstable Offense Exponent",
                 desc: `Increase fighting offense by <b class="green">+^0.1</b> per level.`,
                 icon: ['Icons/Sword','Icons/Exponent'],
@@ -2160,7 +2160,7 @@ const SOLAR_UPGS = [
                 },
                 effDesc: x => formatPow(x),
             },{
-                max: 100,
+                max: 10000,
                 title: "Scaled Stage I",
                 desc: `Increase scaled stages starting by <b class="green">+5</b> per level.`,
                 icon: ['Curr/EvilSolarian'],
@@ -2186,7 +2186,7 @@ const SOLAR_UPGS = [
                 },
                 effDesc: x => "-"+format(x,0),
             },{
-                max: 200,
+                max: 2000,
                 title: "Unstable Corruption Shards",
                 desc: `Increase yield of corrupton shards by <b class="green">x1.1</b> per level.`,
                 icon: ['Curr/CorruptionShard'],
@@ -2201,7 +2201,7 @@ const SOLAR_UPGS = [
                 },
                 effDesc: x => formatMult(x),
             },{
-                max: 200,
+                max: 2000,
                 title: "Unstable Synthesis Speed",
                 desc: `Increase synthesis speed by <b class="green">x1.1</b> per level.`,
                 icon: ['Icons/SynthesisSpeed'],
@@ -2227,7 +2227,7 @@ const SOLAR_UPGS = [
 
         ctn: [
             {
-                max: 1000,
+                max: 100000,
                 title: "Corruption Shard Perk",
                 desc: `Increase yield of corruption shards by <b class="green">+10%</b> per level.`,
                 icon: ['Curr/CorruptionShard'],
@@ -2240,7 +2240,7 @@ const SOLAR_UPGS = [
                 },
                 effDesc: x => formatMult(x),
             },{
-                max: 1000,
+                max: 100000,
                 title: "Synthesis Speed Perk",
                 desc: `Increase synthesis speed by <b class="green">+10%</b> per level.`,
                 icon: ['Icons/SynthesisSpeed'],
@@ -2253,7 +2253,7 @@ const SOLAR_UPGS = [
                 },
                 effDesc: x => formatMult(x),
             },{
-                max: 1000,
+                max: 100000,
                 title: "Funding Perk I",
                 desc: `Increase funding speed by <b class="green">+10%</b> per level.`,
                 icon: ['Icons/Fund'],
@@ -2283,7 +2283,7 @@ const SOLAR_UPGS = [
             },{
                 unl: ()=>player.hsj>=5,
 
-                max: 1000,
+                max: 1000000,
                 title: "Funding Perk II",
                 desc: `Increase funding speed by <b class="green">x1.1</b> per level.`,
                 icon: ['Icons/Fund'],
